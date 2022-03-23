@@ -1,0 +1,199 @@
+* {
+    font-family: "roboto", sans-serif;
+}
+/* чтоб лого был поверх фона */
+header{
+    position: relative;
+     /* для липкого меню */
+    height: 50px;
+
+}
+
+nav {
+    height: 50px;
+    background: #212121;
+    /* 3 строки для липкого меню */
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+.menu {
+    display: flex;
+    /* пространство между списком */
+    justify-content: space-between;
+    padding: 13px 70px;
+    margin: 0;
+    /* избавляемся от круглешков в списке */
+    list-style-type: none;
+}
+.menu .menu_link {
+    font-family: Roboto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+/* границы в меню */
+.menu .menu_item {
+    border-right: 2px dotted black;
+    padding-right: 28px;
+}
+.subheader {
+    /* 2 строки чтоб лого был поверх фона */
+    position: absolute;
+    width: 100%;
+    height: 87px;
+    background: rgba(0,0,0, .6);
+    /* для липкого меню */
+    top: 50px;
+}
+/* чтобы при изменении логотипа он помещался в ширину */
+.subheader .subheader_logo {
+    display: block;
+    min-width: 100%;
+    margin-top: 16px;
+}
+.subheader .subheader_official {
+    margin-top: 6px;
+    font-weight: 400;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+.subheader .subheader_call {
+    margin-top: 23px;
+    font-weight: 300;
+    font-size: 12px;
+    text-align: right;
+    color: #FFFFFF;
+}
+.subheader .subheader_phone {
+    display: block;
+    margin-top: 8px;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    line-height: 12px;
+}
+.subheader .subheader_btn {
+    margin-top: 19px;
+    position: absolute;
+    width: 172px;
+    height: 46px;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    border: none;
+    /* закругляем углы кнопки */
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+    }
+
+ .promo {
+     min-height: 800px;
+     background: url(../img/bg1.png) center center/cover no-repeat;
+     padding: 150px 0 135px 0;
+    }
+.promo .promo_header{
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    line-height: 60px;
+    margin: 0;
+    text-align: center;
+}
+.promo .promo_subheader{
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    line-height: 36px;
+    margin: 0;
+    margin-top: 22px;
+    text-align: center;
+}
+.promo .promo_descr{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    display: flex;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 23px;
+}
+.promo .promo_btn{
+    display: block;
+    margin: 118px auto 0 auto;
+    width: 259px;
+    height: 63px;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+}
+.reasons {
+    padding: 71px 0 65px 0;
+}
+.label{
+    margin: 0 auto;
+    height: 24px;
+    width: 112px;
+    padding: 5px 12px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+ .title{
+    margin-top: 42px;
+    font-weight: 700;
+    font-size: 38px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222222;
+
+}
+.reasons .reasons_block {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+.reasons .reason_icon {
+    width: 116px;
+    height: 116px;
+    margin-right: 26px;
+    float: left;
+}
+.reasons .reasons_head {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #1EACC7;
+}
+.reasons .reasons_discr {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #202020;
+}
+
+
+
+
+
